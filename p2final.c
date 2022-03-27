@@ -2,31 +2,30 @@
 int input()
 {
   int a;
-  printf("enter a number\n");
+  printf("enter a nuber\n");
   scanf("%d",&a);
-  return 0;
-}
-int cmp(int a, int b, int c)
+  return a;
+  }
+int cmp(int a,int b,int c)
 {
-  int l;
+  int largest;
   if((a>b)&&(a>c))
-  printf("A is big\n");
+    printf("A is big\n");
   else if((b>a)&&(b>c))
-  printf("B is big\n");
-  else 
+  printf("B is big \n");
+  else if((c>a)&&(c>b))
   printf("C is big\n");
-  return 0;
-}
-void output(int a,int b, int l)
+  }
+void output(int a,int b,int c,int largest)
 {
-  printf("largest number is %d\n",l);
-}
+  printf("the largest number is %d\n",largest);
+  }
 int main()
 {
-  int a,b,c,l;
+  int a,b,c,largest;
   a=input();
   b=input();
   c=input();
-  l=cmp(a,b,c);
+  largest=cmp(a,b,c);
   return 0;
-}
+  }
