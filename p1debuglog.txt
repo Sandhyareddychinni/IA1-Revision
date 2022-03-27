@@ -1,5 +1,7 @@
-clang version 7.0.0-3~ubuntu0.18.04.1 (tags/RELEASE_700/final)
-gcc -g p1final.c
+ a.out
+sh: 1: a.out: not found
+exit status 127
+ gcc -g p1final.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -37,5 +39,5 @@ sum of 1+2 is 3
 21    return 0;
 (gdb) c
 Continuing.
-[Inferior 1 (process 538) exited normally]
+[Inferior 1 (process 2005) exited normally]
 (gdb) 
